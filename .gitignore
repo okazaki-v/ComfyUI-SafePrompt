@@ -1,0 +1,38 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Env & secrets
+.env
+*.env
+*.key
+*.pem
+
+# Node
+node_modules/
+dist/
+build/
+.npmrc
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Logs
+*.log
+logs/
+Log/
+
+# Misc
+*.bak
+*.swp
+EOF
+
+#other
+output/
