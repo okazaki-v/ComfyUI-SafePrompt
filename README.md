@@ -18,12 +18,14 @@
 1. **获取节点文件**
 
    - 通过 `git clone` 或直接下载ZIP包的方式，将本仓库下载到本地。
+   
 2. **放置节点**
 
    - 将 `SafePrompt` 文件夹完整地放入 ComfyUI 的自定义节点目录中：
      ```bash
      ComfyUI/custom_nodes/
      ```
+   
 3. **安装依赖**
 
    - 打开您的终端（命令行工具），进入 `SafePrompt` 目录：
@@ -34,11 +36,12 @@
      ```bash
      pip install -r requirements.txt
      ```
+   
 4. **配置API密钥**
 
-   - 在 `SafePrompt` 文件夹中，找到 `config.json.example` 文件。
-   - **复制**该文件并将其**重命名**为 `config.json`。
+   - 在 `SafePrompt` 文件夹中，找到 `config.json`文件。
    - 用文本编辑器打开 `config.json`，将 `"YOUR_ZHIPU_API_KEY_HERE"` 替换为您自己的智谱AI API密钥。
+   
 5. **重启ComfyUI**
 
    - 关闭并重新启动ComfyUI。您现在应该可以在节点菜单中找到它。
@@ -52,7 +55,7 @@
 
    - `prompt`: 连接您想要处理的原始提示词。这可以来自一个“Primitive”节点或任何其他输出文本的节点。
    - `instruction`: 在此文本框中输入您希望AI执行的指令。例如：“请把所有关于猫的描述都换成狗”。
-   - `model`: 从下拉菜单中选择一个AI模型。
+   - `model_name`: 从下拉菜单中选择一个AI模型。
    - `seed`: 随机种子，用于确保AI在同样输入下能产生可复现的结果。
 3. **获取输出**:
 
